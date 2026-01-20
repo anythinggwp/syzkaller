@@ -39,7 +39,7 @@ func WaitForSSH(timeout time.Duration, opts SSHOptions, OS string, stop chan err
 	SleepInterruptible(5 * time.Second)
 	for {
 		select {
-		case <-time.After(5 * time.Second):
+		case <-time.After(60 * time.Second):
 		case err := <-stop:
 			return err
 		case <-Shutdown:
