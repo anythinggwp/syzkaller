@@ -136,7 +136,6 @@ var archConfigs = map[string]*archConfig{
 		NetDev: "e1000",
 		RngDev: "virtio-rng-pci",
 		CmdLine: []string{
-			"root=/dev/vda",
 			"console=ttyS0",
 		},
 	},
